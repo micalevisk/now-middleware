@@ -1,0 +1,34 @@
+{
+  "name": "@amaurymartiny/now-middleware",
+  "version": "0.1.0",
+  "author": "Amaury Martiny <amaury.martiny@protonmail.com>",
+  "description": "Use Express middlewares with ZEIT Now serverless functions",
+  "files": [
+    "/lib"
+  ],
+  "license": "GPL-3.0",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/amaurymartiny/now-middleware",
+  "scripts": {
+    "build": "rimraf lib/ && tsc",
+    "deploy": "yarn build && standard-version",
+    "lint": "tsc --noEmit && eslint . --ext ts",
+    "test": "Echo Skipped for now."
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@amaurymartiny/config": "^1.0.11",
+    "@now/node": "^1.4.1",
+    "standard-version": "^7.1.0",
+    "typescript": "^3.7.5"
+  },
+  "peerDependencies": {
+    "@now/node": "^1.4.1"
+  }
+}

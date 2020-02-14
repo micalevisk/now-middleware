@@ -1,14 +1,12 @@
-[![Build Status](https://travis-ci.org/amaurymartiny/now-middleware.svg?branch=master)](https://travis-ci.org/amaurymartiny/now-middleware)
+[![Actions Status](https://github.com/amaurymartiny/now-middleware/workflows/CI/badge.svg)](https://github.com/amaurymartiny/now-middleware/actions)
 [![npm (scoped)](https://img.shields.io/npm/v/@amaurymartiny/now-middleware.svg)](https://www.npmjs.com/package/@amaurymartiny/now-middleware)
 [![dependencies Status](https://david-dm.org/amaurymartiny/now-middleware/status.svg)](https://david-dm.org/amaurymartiny/now-middleware)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@amaurymartiny/now-middleware.svg)
-![npm bundle size](https://img.shields.io/bundlephobia/min/@amaurymartiny/now-middleware.svg)
 [![Buy me a tree](https://img.shields.io/badge/Buy%20me%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://offset.earth/amaurymartiny)
 
 <br /><br /><br />
 
 <h1 align="center">now-middleware</h1>
-<h4 align="center">Use Express middlewares with ZEIT Now serverless functions.</h4>
+<h4 align="center">Chain Express middlewares with ZEIT Now serverless functions.</h4>
 
 <br /><br /><br />
 
@@ -27,11 +25,12 @@ import { chain } from '@amaurymartiny/now-middleware';
 import { NowRequest, NowResponse } from '@now/node';
 
 // Import a couple of Express middlewares
-import cors from 'cors'; // Enable cross-origin resource sharing (CORS) with various options.
-import morgan from 'morgan'; // HTTP request logger.
+import cors from 'cors'; // Enable cross-origin resource sharing (CORS) with various options
+import morgan from 'morgan'; // HTTP request logger
 
 async function handler(_req: NowRequest, res: NowResponse): Promise<void> {
   // This is your normal ZEIT Now function.
+  res.send('Everything OK.');
 }
 
 // Chain some middlewares before calling the ZEIT Now serverless function

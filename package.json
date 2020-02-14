@@ -2,7 +2,7 @@
   "name": "@amaurymartiny/now-middleware",
   "version": "0.1.0",
   "author": "Amaury Martiny <amaury.martiny@protonmail.com>",
-  "description": "Use Express middlewares with ZEIT Now serverless functions",
+  "description": "Chain Express middlewares with ZEIT Now serverless functions",
   "files": [
     "/lib"
   ],
@@ -16,7 +16,7 @@
     "build": "rimraf lib/ && tsc",
     "deploy": "yarn build && standard-version",
     "lint": "tsc --noEmit && eslint . --ext ts",
-    "test": "Echo Skipped for now."
+    "test": "echo Skipped for now."
   },
   "dependencies": {
     "@types/express": "^4.17.2",

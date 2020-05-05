@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/amaurymartiny/now-middleware/compare/v0.1.1...v0.1.2) (2020-05-05)
+
+
+### Bug Fixes
+
+* Allow error middlewares ([#26](https://github.com/amaurymartiny/now-middleware/issues/26)) ([55a12a0](https://github.com/amaurymartiny/now-middleware/commit/55a12a08f744420c4b34861eff55e3ba883423e8))
+
 ### [0.1.1](https://github.com/amaurymartiny/now-middleware/compare/v0.1.0...v0.1.1) (2020-02-15)
 
 

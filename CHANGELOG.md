@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [0.2.0](https://github.com/amaurymartiny/now-middleware/compare/v0.1.2...v0.2.0) (2020-05-30)
 
+
+### ⚠ BREAKING CHANGES
+
+* This package's peer dependency has been changed from `@now/node` to `@vercel/node`.
+
 ### [0.1.2](https://github.com/amaurymartiny/now-middleware/compare/v0.1.1...v0.1.2) (2020-05-05)
 
 
